@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <link rel="stylesheet" href="form.css">
+<link href="http://fonts.googleapis.com/css?family=Nunito:400,300" rel="stylesheet" type="text/css">
+        <title>SingUp Form </title>
+    </head>
+        <body>
+            <h1> Sign Up  </h1>
+
+            <form action="" method="POST">
+
+                <fieldset> 
+
+            <legend><span class="section">1</span>Your Basic Info</legend>
+
+                <label class="" for="name">Name:</label>
+                <input type="text" name="name" value="">
+
+<label class="" for="email">Email:</label>
+                <input type="email" name="email" value="">
+
+<label class="" for="password">Password:</label>
+                <input type="password" name="password" value="">
+                
+             <label> Age: </label> 
+                <input type="radio" name="age" value="Under_18">
+                <label class="light" for="Under_18">Under 18 </label> <br/>
+                <input type="radio" name="age" value="Over_18"> 
+                <label class="light" for="Over_18">Over 18 </label>
+
+            </fieldset>
+
+            <fieldset>
+              <legend><span class="section">2</span>Your Profile </legend>
+              
+              <label class="" for="tutorial">Bio:</label>
+              <textarea name="tutorial"></textarea>
+
+              <label for="job">Job Role: </label>
+              <select name="job">
+               
+                <optgroup label="web">
+    <option value="frondend_developer">Frond-End Developer</option> 
+   <option value="php_developer">PHP Developer</option> 
+   <option value="python_developer">Python Developer</option>
+   <option value="rails_developer">Rails Developer </option>
+   <option value="web_designer">Web Designer</option>
+   <option value="worldpress_developer">Wordpress Developer</option>
+
+</optgroup>
+
+<optgroup label="Mobile">
+<option value="android_developer">Android Developer </option>
+<option value="ios_developer">IOS Developer</option>
+<option value="mobile_developer">Mobile Designer</option>
+</optgroup>
+
+<optgroup label="Business">
+    <option value="bisiness_owner">Business Owner </option>
+    <option value="freelancer">Freelancer</option>
+    <option value="youtube_creator">Youtube Creator</option>
+</optgroup>
+                 </select>
+
+                 <label>Interests:</label> 
+
+<input type="checkbox" value="interest_development" name="user_interest">
+<label class="light" for="development">Development</label> <br/>
+
+<input type="checkbox" value="interest_desig" name="user_interest">
+<label class="light" for="design">Design</label> <br/>
+
+<input type="checkbox" value="interest_business" name="user_interest">
+<label class="light" for="business">Business</label>
+
+            </fieldset>
+
+        <button type="submit"> Sign Up </button>
+            </form>
+        </body>
+    
+</html>
